@@ -1,0 +1,2 @@
+UPDATE inv_pha_item_price
+SET expire_date = '2025-12-31';
