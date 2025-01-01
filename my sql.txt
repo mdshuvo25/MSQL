@@ -1,11 +1,3 @@
-Expire date Update
-
-UPDATE inv_pha_item_price
-SET expire_date = '2025-12-31';
-
-DEPARTMENT THAKE TEST BAR KORAR CODE
-
-
 SELECT w.`answer_concept`,w.`dep_concept`,w.`dep_name`
 FROM `dept_test` AS w
 WHERE NOT EXISTS (
