@@ -1,0 +1,8 @@
+SELECT w.`concept_id`,w.`service_id`,w.`name`
+FROM `billing_billable_service` AS w
+WHERE NOT EXISTS (
+       SELECT 1 /* This can be anything.It's ignored. */
+       FROM `concept_answer` m
+       WHERE m.`answer_concept`=w.`concept_id`
+       
+       ) ;
