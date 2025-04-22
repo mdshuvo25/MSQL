@@ -1,0 +1,3 @@
+ SET FOREIGN_KEY_CHECKS = 0;
+DELETE FROM `billing_billable_service` WHERE concept_id NOT IN (SELECT answer_concept FROM `concept_answer`);
+SET FOREIGN_KEY_CHECKS = 1;
